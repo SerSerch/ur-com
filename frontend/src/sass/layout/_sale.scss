@@ -1,0 +1,118 @@
+.sale {
+  padding-bottom: 80px - 13 - 15;
+  &__box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.25);
+    background-color: #ffffff;
+    border-bottom: 7px solid #d0231d;
+    &:after {
+      display: flex;
+      position: absolute;
+      z-index: 2;
+      top: 100%;
+      right: 0;
+      width: 306px;
+      min-height: 62px;
+      padding-left: 45px;
+      content: attr(data-sale);
+      justify-content: center;
+      align-items: center;
+      background-color: #d0231d;
+      font-size: 2rem;
+      font-weight: 700;
+      color: #fff;
+      text-align: center;
+      transform: rotate(-30deg) translate(35px, 21px);
+      transform-origin: left top;
+      box-sizing: border-box;
+    }
+  }
+  &__caption {
+    padding: 46px 15px 11px + 15;
+  }
+  &__list {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 104px;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 263px;
+    min-height: 356px;
+    padding: 13px 13px 15px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.25);
+    background-color: #ffffff;
+    border-bottom: 7px solid #d0231d;
+    box-sizing: border-box;
+  }
+  &__plus,
+  &__equal {
+    width: 58px;
+    min-height: 58px;
+    background-repeat: no-repeat;
+    background-position: left 10px top 10px;
+    background-size: 48px auto;
+  }
+  &__plus {
+    background-image: url(../svg/plus.svg);
+  }
+  &__equal {
+    background-image: url(../svg/equal.svg);
+  }
+  &__image {
+    min-height: 130px;
+    border-radius: 4px;
+    background-image: url(../img/sale.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 13px 0 7px;
+  }
+  &__title-big {
+    padding-top: 35px - 13;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  &__text {
+    flex-grow: 1;
+    font-size: 0.875rem;
+    text-align: justify;
+  }
+  &__price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 15px;
+  }
+  &__price-big {
+    font-size: 2.25rem;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 27px;
+  }
+  &__instead {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: line-through;
+  }
+}
+
+@media (min-width: 992px) {
+  .sale {
+    &__list {
+      flex-direction: row;
+    }
+  }
+}
