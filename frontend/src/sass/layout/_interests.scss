@@ -1,0 +1,42 @@
+.interests {
+  &__code-box {
+    padding-bottom: 45px;
+    justify-content: center;
+  }
+
+  &__code {
+    width: 100%;
+    max-width: 190px;
+    padding: 133px 15px 15px;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center top 21px;
+    box-sizing: border-box;
+
+    &._i1 {
+      background-image: url(../img/info1.png);
+    }
+
+    &._i2 {
+      background-image: url(../img/info2.png);
+    }
+
+    &._i3 {
+      background-image: url(../img/info3.png);
+    }
+
+    &._i4 {
+      background-image: url(../img/info4.png);
+    }
+
+    &._i5 {
+      background-image: url(../img/info5.png);
+    }
+
+    &._i6 {
+      background-image: url(../img/info6.png);
+    }
+  }
+}
