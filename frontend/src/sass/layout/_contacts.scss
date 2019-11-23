@@ -1,6 +1,5 @@
 .contacts {
   position: relative;
-  height: 100vh;
   min-height: 400px;
   &__box {
     width: 100%;
@@ -24,6 +23,7 @@
     font-size: 0.875rem;
     background-repeat: no-repeat;
     background-position: top 12px left;
+    background-size: 16px 16px;
     &._i1 {
       background-image: url(../svg/i-s1.svg);
     }
@@ -42,13 +42,23 @@
     &._i6 {
       background-image: url(../svg/i-s6.svg);
     }
+    &._i7 {
+      background-image: url(../svg/i-s7.svg);
+    }
+    &._i8 {
+      background-image: url(../svg/i-s8.svg);
+    }
+    &._i9 {
+      background-image: url(../svg/i-s9.svg);
+    }
   }
   &__soc {
     display: flex;
     justify-content: center;
   }
   &__map {
-    height: 100%;
+    display: block;
+    height: 100vh;
   }
 }
 
