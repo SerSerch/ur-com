@@ -1,0 +1,65 @@
+/*
+  550 mobile
+*/
+
+@media (min-width: 576px) {
+
+}
+
+/*
+  750 tablets
+*/
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  .body0 {
+    font-size: 1.5rem;
+  }
+
+  ._eq {
+    background-image: url(../svg/equal2.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top 113px center;
+  }
+}
+
+/*
+  750 tablet landscape
+*/
+
+@media (min-width: 768px) and (orientation: landscape) {
+
+}
+
+/*
+  960 desktops
+*/
+
+@media (min-width: 992px) {
+  .body1 {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+  }
+}
+
+/*
+  1170 full 2k
+*/
+
+@media (min-width: 1200px) {
+  ._eq {
+    background-size: 1600px auto;
+  }
+}

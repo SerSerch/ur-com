@@ -1,0 +1,132 @@
+.footer {
+  position: relative;
+  z-index: 2;
+  background-color: #333333;
+  &__container {
+    min-height: 176px;
+    align-items: center;
+  }
+  &__logo-box {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    padding: 15px 0 15px 15px;
+    box-sizing: border-box;
+  }
+  &__logo {
+    width: 100%;
+    max-width: 47px;
+  }
+  &__logo-text {
+    padding-left: 14px;
+  }
+  &__caption {
+    font-size: 1.125rem;
+    text-align: left;
+  }
+  &__sup {
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+  &__copy {
+    padding-top: 4px;
+    font-size: 0.625rem;
+  }
+  &__soc {
+    position: relative;
+    padding: 35px 10px 15px;
+    justify-content: center;
+    &:before {
+      display: block;
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      right: 15px;
+      content: 'Мы в соц. сетях';
+      font-size: 0.75rem;
+      text-align: center;
+    }
+  }
+  &__soc-link {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 30px auto;
+    &._fb {
+      background-image: url(../svg/ico5.svg);
+    }
+    &._vk {
+      background-image: url(../svg/ico6.svg);
+    }
+    &._in {
+      background-image: url(../svg/ico7.svg);
+    }
+    &._vb {
+      background-image: url(../svg/ico8.svg);
+    }
+    &._wa {
+      background-image: url(../svg/ico9.svg);
+    }
+  }
+  &__contacts,
+  &__pages {
+    padding: 15px 10px;
+    flex-direction: column;
+  }
+  &__cont-item,
+  &__link {
+    display: flex;
+    align-items: center;
+    height: 25px;
+    font-size: 0.75rem;
+    padding-left: 20px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 13px 13px;
+    &._i1 {
+      background-image: url(../svg/i1.svg);
+    }
+    &._i2 {
+      background-image: url(../svg/i2.svg);
+    }
+    &._i3 {
+      background-image: url(../svg/i3.svg);
+    }
+    &._i4 {
+      background-image: url(../svg/i4.svg);
+    }
+    &._i5 {
+      background-image: url(../svg/i5.svg);
+    }
+    &._i6 {
+      background-image: url(../svg/i6.svg);
+    }
+    &._i7 {
+      background-image: url(../svg/i7.svg);
+    }
+    &._i8 {
+      background-image: url(../svg/i8.svg);
+    }
+    &._i9 {
+      background-image: url(../svg/i9.svg);
+    }
+  }
+  &__link {
+    background-image: url(../svg/bulet.svg);
+    background-size: auto auto;
+    padding-left: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    &__caption {
+      font-size: 1.375rem;
+    }
+    &__sup {
+      font-size: 0.875rem;
+    }
+  }
+}
