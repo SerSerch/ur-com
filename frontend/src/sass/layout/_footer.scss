@@ -10,7 +10,7 @@
     display: flex;
     flex-grow: 1;
     align-items: center;
-    padding: 15px;
+    padding: 15px 0 15px 15px;
     box-sizing: border-box;
   }
   &__logo {
@@ -34,14 +34,17 @@
   }
   &__soc {
     position: relative;
-    padding: 35px 15px 15px;
+    padding: 35px 10px 15px;
+    justify-content: center;
     &:before {
       display: block;
       position: absolute;
       top: 15px;
       left: 15px;
+      right: 15px;
       content: 'Мы в соц. сетях';
       font-size: 0.75rem;
+      text-align: center;
     }
   }
   &__soc-link {
@@ -63,10 +66,13 @@
     &._vb {
       background-image: url(../svg/ico8.svg);
     }
+    &._wa {
+      background-image: url(../svg/ico9.svg);
+    }
   }
   &__contacts,
   &__pages {
-    padding: 15px;
+    padding: 15px 10px;
     flex-direction: column;
   }
   &__cont-item,
@@ -78,7 +84,7 @@
     padding-left: 20px;
     background-repeat: no-repeat;
     background-position: left center;
-    background-size: auto 13px;
+    background-size: 13px 13px;
     &._i1 {
       background-image: url(../svg/i1.svg);
     }
@@ -96,6 +102,15 @@
     }
     &._i6 {
       background-image: url(../svg/i6.svg);
+    }
+    &._i7 {
+      background-image: url(../svg/i7.svg);
+    }
+    &._i8 {
+      background-image: url(../svg/i8.svg);
+    }
+    &._i9 {
+      background-image: url(../svg/i9.svg);
     }
   }
   &__link {
