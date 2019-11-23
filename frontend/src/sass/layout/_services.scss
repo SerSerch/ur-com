@@ -5,14 +5,18 @@
     justify-content: center;
   }
   &__image-box {
-    width: 100%;
-    max-width: 154px;
+    width: 129px;
+    min-width: 129px;
   }
   &__image {
     width: 100%;
     border-radius: 4px;
   }
-  &__item {
+  &__price-container {
+    padding: 6px 15px;
+  }
+  &__item,
+  &__price-item {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -27,6 +31,95 @@
     background-color: #fff;
     box-sizing: border-box;
   }
+  &__price-item {
+    position: relative;
+    max-width: 768px;
+    min-height: auto;
+    border-bottom: none;
+    & .services__box {
+      padding-left: 0;
+    }
+    & .services__text {
+      overflow: hidden;
+      visibility: hidden;
+      transition: all .6s ease;
+    }
+  }
+  &__show {
+    display: none;
+    &:checked + .services__text {
+      position: relative;
+      visibility: visible;
+      transition: all .6s ease;
+      & .services__text-box {
+        margin-bottom: 0;
+        transition: all .6s ease;
+      }
+    }
+  }
+  &__show1 {
+    display: none;
+    justify-content: center;
+    position: absolute;
+    bottom: 0px;
+    left: 13px;
+    right: 13px;
+    height: 25px;
+    font-size: 0.875rem;
+    cursor: pointer;
+    &:hover {
+      color: #d0231d;
+    }
+    &:before {
+      content: '';
+      padding-left: 23px;
+      background-image: url(../svg/show.svg);
+      background-repeat: no-repeat;
+      background-position: top 3px center;
+    }
+    &:after {
+      content: 'Подробнее';
+    }
+    &._active {
+      & + .services__text {
+        display: block;
+      }
+      &:before {
+        transform: rotate(180deg);
+        background-position: bottom 3px center;
+      }
+      &:after {
+        content: 'Скрыть подробности';
+      }
+    }
+  }
+  &__prints {
+    justify-content: center;
+  }
+  &__print-item {
+    flex-direction: column;
+    width: 147px;
+    text-align: center;
+  }
+  &__print-img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+  }
+  &__print-img {
+    max-width: 135px;
+    max-height: 135px;
+  }
+  &__print-title {
+    font-size: 0.8125rem;
+  }
+  &__print-price {
+    padding: 10px 13px;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #d0231d;
+  }
   &__top {
     flex-grow: 1;
     padding: 0 13px;
@@ -34,7 +127,7 @@
   }
   &__bot {
     justify-content: space-between;
-    padding-top: 13px;
+    padding-top: 8px;
   }
   &__price {
     flex-grow: 1;
@@ -60,12 +153,22 @@
     flex-direction: column;
   }
   &__caption {
-    padding: 14px 0;
+    padding: 0;
+    font-size: 1.25rem;
+  }
+  &__price-caption {
+    padding: 0;
     font-size: 1.125rem;
+    text-align: left;
   }
   &__text {
     font-size: 0.875rem;
     text-align: justify;
+  }
+  &__text-box {
+    padding-top: 8px;
+    margin-bottom: -100%;
+    transition: all .6s ease;
   }
 }
 
