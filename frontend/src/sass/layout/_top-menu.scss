@@ -26,8 +26,10 @@
   }
   &__soc {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    padding: 15px;
+    padding: 15px 10px;
   }
   &__soc-icon {
     width: 29px;
@@ -47,6 +49,9 @@
     }
     &._vb {
       background-image: url(../svg/ico8.svg);
+    }
+    &._wa {
+      background-image: url(../svg/ico9.svg);
     }
   }
   &__adr,
@@ -89,17 +94,7 @@
     min-height: 63px;
   }
   &__nav-mob {
-    position: absolute;
-    z-index: 5;
-    top: 63px;
-    left: 0;
-    right: 0;
-    height: 0;
-    overflow: hidden;
     background-color: #d0231d;
-    flex-direction: column;
-    opacity: 0;
-    transition: all .3s ease-in-out;
   }
   &__nav-check {
     display: none;
@@ -169,6 +164,7 @@
     flex-direction: column;
     width: 0;
     height: 0;
+    max-height: 238px;
     overflow: hidden;
     background-color: #d0231d;
     &:hover {
@@ -182,6 +178,7 @@
     position: relative;
     justify-content: center;
     align-items: center;
+    text-align: center;
     flex-grow: 1;
     min-height: 63px;
     padding: 15px;
@@ -209,12 +206,6 @@
       right: 15px;
       border-top: 1px solid #fff;
     }
-    &:active + .top-menu__sub-menu,
-    &:focus + .top-menu__sub-menu {
-      height: auto;
-      width: auto;
-      opacity: 1;
-    }
   }
 }
 
@@ -229,12 +220,8 @@
     }
     &__nav-mob {
       position: relative;
-      top: 0;
       display: flex;
-      height: auto;
-      overflow: visible;
       flex-direction: row;
-      opacity: 1;
       & > .top-menu__link {
         &:after {
           display: none;
@@ -249,7 +236,6 @@
       right: 0;
       width: 0;
       height: 0;
-      flex-direction: row;
       flex-wrap: wrap;
       overflow: hidden;
       &:after {
@@ -269,6 +255,13 @@
         width: 100%;
         min-height: auto;
         border-right: 1px solid #fff;
+      }
+    }
+    &__link {
+      &:hover + .top-menu__sub-menu {
+        height: auto;
+        width: auto;
+        opacity: 1;
       }
     }
   }
