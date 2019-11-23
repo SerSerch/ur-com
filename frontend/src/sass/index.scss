@@ -143,6 +143,7 @@ img	{
 .button {
 	color: $s-text-color;
 	background-color: #d0231d;
+	text-decoration: none;
 	cursor: pointer;
 	&:focus,
 	&:active,
@@ -159,6 +160,28 @@ img	{
 			color: #fff;
 			background-color: #d0231d;
 		}
+	}
+}
+
+.back {
+	display: block;
+	width: 226px;
+	min-height: 39px;
+	padding: 4px 4px 4px 37px;
+	font-size: 0.8125rem;
+	border: 1px solid #d0231d;
+	border-radius: 4px;
+	text-decoration: none;
+	color: #d0231d;
+	box-sizing: border-box;
+	background-image: url(../svg/back.svg);
+	background-repeat: no-repeat;
+	background-position: left 11px center;
+	&:before {
+		content: 'Назад в общий раздел "';
+	}
+	&:after {
+		content: '"';
 	}
 }
 

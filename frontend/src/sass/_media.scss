@@ -26,6 +26,13 @@
   .body0 {
     font-size: 1.5rem;
   }
+
+  ._eq {
+    background-image: url(../svg/equal2.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top 113px center;
+  }
 }
 
 /*
@@ -52,5 +59,7 @@
 */
 
 @media (min-width: 1200px) {
-
+  ._eq {
+    background-size: 1600px auto;
+  }
 }

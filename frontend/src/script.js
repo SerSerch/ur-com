@@ -60,3 +60,15 @@ for (let i of phoneInput) {
     i.addEventListener("blur", blurPhone);
     i.addEventListener('input', inputPhone);
 }
+
+function priceCheck(e) {
+    let element = e.currentTarget.querySelector('.services__show');
+    if (e.target.classList.contains('_sh')) {
+        element.checked = !element.checked;
+    }
+}
+
+let price = document.querySelectorAll('.services__price-item._show');
+for (let i of price) {
+    i.addEventListener("click", priceCheck);
+}
