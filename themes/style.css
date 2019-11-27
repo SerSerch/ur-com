@@ -1,0 +1,463 @@
+/* breadcrumbs */
+.breadcrumbs {
+	font-size: 0.75rem;
+	padding: 15px;
+}
+.breadcrumbs a {
+	display: inline-block;
+    text-decoration: none;
+    outline: none;
+    color: #000;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:active,
+.breadcrumbs a:focus {
+	color: #d0231d;
+}
+
+.services__price-item .services__text {
+	max-height: 0;
+}
+.services__show:checked+.services__text {
+	max-height: 100%;
+}
+
+.modal__list {
+	position: relative;
+    margin: 0 auto;
+	padding: 15px;
+    border-radius: 8px;
+    background-color: #fff;
+	max-width: 580px;
+	width: 100%;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+/*calculator*/
+.mt-50px{
+	margin-top: 50px;
+}
+
+.calcul-fon {
+  max-width: 768px;
+  width: 100%;
+  margin: 15px auto 50px;
+  background: #FFFFFF;
+  border: 1px solid #FAFAFA;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+          box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  text-align: center;
+  padding: 20px 50px;
+  font-family: Montserrat,sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: #333;
+}
+
+.calcul-fon .form-group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.calcul-fon__bottom {
+  margin-top: 50px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.calcul-fon .contenInput-box {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.calcul-fon .contenInput-box span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #D0231D;
+}
+
+.calcul-fon .contenInput-box-2 {
+  background: #D0231D;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.calcul-fon .contenInput-box-2 a {
+  padding: 7px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.calcul-fon .contenInput-box-2 .button {
+  max-width: 320px;
+}
+
+.calcul-title {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 39px;
+  margin-bottom: 0;
+}
+
+.calcul-sub-title {
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.calcul-sub-title:after {
+  content: '';
+  max-width: 235px;
+  height: 1px;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  background: #D0231D;
+}
+
+.label-title {
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.label-title strong {
+  font-weight: bold;
+}
+
+.custom-control {
+  margin: 0 20px;
+}
+
+.custom-control-input {
+  opacity: 0;
+}
+
+.custom-control-label {
+  position: relative;
+  margin-bottom: 0;
+}
+
+.custom-control.custom-control-inline.custom-radio input, .custom-control.custom-control-inline.custom-radio label {
+  cursor: pointer;
+}
+
+.custom-control-label:after, .custom-control-label:before {
+  position: absolute;
+  top: 0px;
+  left: -1.5rem;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  content: "";
+  border-radius: 50%;
+}
+
+.custom-control-label:before {
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #fff;
+  border: 1px solid #D0231D;
+}
+
+.custom-radio .custom-control-input:checked ~ .custom-control-label:after {
+  background-image: url("img/chekbox.svg");
+  border: 1px solid #D0231D;
+}
+
+.custom-range {
+  width: 100%;
+  padding-left: 0;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.custom-range:focus {
+  outline: none;
+}
+
+.custom-range::-moz-focus-outer {
+  border: 0;
+}
+
+.custom-range::-webkit-slider-thumb {
+  width: 1rem;
+  height: 1rem;
+  margin-top: -.25rem;
+  background-color: #007bff;
+  border: 0;
+  border-radius: 1rem;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.custom-range::-webkit-slider-thumb:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+          box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.custom-range::-webkit-slider-thumb:active {
+  background-color: #b3d7ff;
+}
+
+.custom-range::-webkit-slider-runnable-track {
+  width: 100%;
+  height: .5rem;
+  color: transparent;
+  cursor: pointer;
+  background-color: #dee2e6;
+  border-color: transparent;
+  border-radius: 1rem;
+}
+
+.custom-range::-moz-range-thumb {
+  width: 1rem;
+  height: 1rem;
+  background-color: #007bff;
+  border: 0;
+  border-radius: 1rem;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.custom-range::-moz-range-thumb:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.custom-range::-moz-range-thumb:active {
+  background-color: #b3d7ff;
+}
+
+.custom-range::-moz-range-track {
+  width: 100%;
+  height: .5rem;
+  color: transparent;
+  cursor: pointer;
+  background-color: #dee2e6;
+  border-color: transparent;
+  border-radius: 1rem;
+}
+
+.custom-range::-ms-thumb {
+  width: 1rem;
+  height: 1rem;
+  background-color: #007bff;
+  border: 0;
+  border-radius: 1rem;
+  appearance: none;
+}
+
+.custom-range::-ms-thumb:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.custom-range::-ms-thumb:active {
+  background-color: #b3d7ff;
+}
+
+.custom-range::-ms-track {
+  width: 100%;
+  height: .5rem;
+  color: transparent;
+  cursor: pointer;
+  background-color: transparent;
+  border-color: transparent;
+  border-width: .5rem;
+}
+
+.custom-range::-ms-fill-lower, .custom-range::-ms-fill-upper {
+  background-color: #dee2e6;
+  border-radius: 1rem;
+}
+
+.custom-range::-ms-fill-upper {
+  margin-right: 15px;
+}
+
+.custom-range {
+  border-radius: 10px;
+  height: 4px;
+  background-color: #ddd;
+}
+
+.range-field {
+  position: relative;
+}
+
+.range-field:before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: #D0231D;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: -1px;
+}
+
+.range-field:after {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: #dddddd;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  top: -1px;
+}
+
+.range-field__start {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.range-field__end {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.calcul-number {
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  font-size: 14px;
+  line-height: 17px;
+  position: absolute;
+  top: 10px;
+  border: none;
+  color: #D0231D;
+}
+
+.calcul-fon input[type=range]::-webkit-slider-thumb, .calcul-fon input[type=range]:focus::-webkit-slider-thumb, .calcul-fon input[type=range]:active::-webkit-slider-thumb {
+  width: 14px;
+  height: 14px;
+  margin-top: -3px;
+  background-image: url("img/chekbox.svg");
+  background-position: center;
+  background-size: contain;
+  background-color: #fff;
+  z-index: 10;
+  position: relative;
+  cursor: pointer;
+}
+
+.calcul-fon input[type=range]::-moz-range-thumb, .calcul-fon input[type=range]:focus::-moz-range-thumb, .calcul-fon input[type=range]:active::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  margin-top: -3px;
+  background-image: url("../img/chekbox.svg");
+  background-position: center;
+  background-size: contain;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.calcul-fon input[type=range]::-ms-thumb, .calcul-fon input[type=range]:focus::-ms-thumb, .calcul-fon input[type=range]:active::-ms-thumb {
+  width: 14px;
+  height: 14px;
+  margin-top: -3px;
+  background-image: url("img/chekbox.svg");
+  background-position: center;
+  background-size: contain;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.calcul-fon input[type="range"] {
+  border-radius: 10px;
+  height: 4px;
+  background-color: #ddd;
+}
+
+.calcul-fon input[type=range]::-webkit-slider-runnable-track {
+  background: transparent;
+}
+
+.calcul-fon input[type=range]:focus::-webkit-slider-runnable-track {
+  background: transparent;
+}
+
+.calcul-fon input[type=range]::-moz-range-track {
+  background: transparent;
+}
+
+.calcul-fon input[type=range]::-ms-track {
+  background: transparent;
+  color: transparent;
+}
+
+.calcul-fon input[type=range]::-ms-fill-lower {
+  background: transparent;
+}
+
+.calcul-fon input[type=range]:focus::-ms-fill-lower {
+  background: transparent;
+}
+
+.calcul-fon input[type=range]::-ms-fill-upper {
+  background: transparent;
+}
+
+.calcul-fon input[type=range]:focus::-ms-fill-upper {
+  background: transparent;
+}
+
+@media (max-width: 768px){
+	.custom-control{
+		margin-bottom: 15px;
+	}
+	.calcul-fon__bottom{
+		flex-direction: column;
+	}
+	.contenInput-box-1{
+		margin-bottom: 15px;
+	}
+}	

@@ -1,0 +1,4 @@
+<section class="feedback _container _row"><div class="_col-12 _col-lg-5 feedback__left"></div><div class="_row _col-12 _col-lg-7"><div class="feedback__right"><h3 class="feedback__caption"><?php block_field('caption') ?></h3><div class="_col-12 _row feedback__list _p-n"><div class="feedback__item"><a class="link feedback__link _i1" href="tel:<?php block_field('phone') ?>">Звонок <?php block_field('phone') ?></a></div><div class="feedback__item"><div class="feedback__link _i2" onclick="document.querySelector('.b24-widget-button-openline_livechat').click()" style="cursor:pointer">Онлайн-консультант</div></div><div class="feedback__item"><a class="link feedback__link _i3" href="<?php block_field('vk') ?>">Вконтакте ur_com</a></div><div class="feedback__item"><a class="link feedback__link _i4" href="mailto:<?php block_field('email') ?>"><?php block_field('email') ?></a></div></div></div></div>
+<script>
+</script>
+</section>
