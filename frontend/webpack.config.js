@@ -41,7 +41,8 @@ module.exports = {
                     {
                         loader: 'file-loader',
                         options: {
-                            name: 'img/[name].[ext]'
+                            name: '[name].[ext]',
+                            outputPath: 'img',
                         }
                     }
                 ]
@@ -52,7 +53,8 @@ module.exports = {
                     {
                         loader: 'file-loader',
                         options: {
-                            name: 'svg/[name].[ext]'
+                            name: '[name].[ext]',
+                            outputPath: 'svg',
                         }
                     }
                 ]
@@ -76,6 +78,15 @@ module.exports = {
     plugins :[
         new HTMLplugin({
             template: path.resolve(__dirname, 'src', 'pages', 'index.pug'),
+            filename: 'index.html',
+        }),
+        new HTMLplugin({
+            template: path.resolve(__dirname, 'src', 'pages', 'services.pug'),
+            filename: 'services.html',
+        }),
+        new HTMLplugin({
+            template: path.resolve(__dirname, 'src', 'pages', 'contacts.pug'),
+            filename: 'contacts.html',
         }),
         new MiniCssExtractPlugin({
             filename: '[name].css',
